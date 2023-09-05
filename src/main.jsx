@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import {createBrowserRouter, Routerprovider, Navigate } from 'react-router-dom'
+import {createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
 import Error from './routes/Error/index.jsx'
@@ -37,6 +37,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Routerprovider router={router}></Routerprovider>
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>,
 )
