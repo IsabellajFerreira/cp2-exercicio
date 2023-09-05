@@ -6,7 +6,7 @@ import './index.css'
 import {createBrowserRouter, Routerprovider } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
-import Error from './routes/EditarProdutos/index.jsx'
+import Error from './routes/Error/index.jsx'
 import EditarProduto from './routes/EditarProdutos/index.jsx'
 
 const router = createBrowserRouter([
@@ -33,6 +33,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Routerprovider router={router}></Routerprovider>
   </React.StrictMode>,
 )
